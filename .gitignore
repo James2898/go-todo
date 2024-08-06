@@ -5,6 +5,9 @@ _obj
 _test
 vendor/
 
+*.logs
+*.log
+
 *.exe
 *.out
 
