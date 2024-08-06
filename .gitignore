@@ -1,0 +1,11 @@
+.env
+node_modules
+
+_obj
+_test
+vendor/
+
+*.exe
+*.out
+
+/tmp/
