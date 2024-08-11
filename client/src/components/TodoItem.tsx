@@ -1,4 +1,6 @@
-import {Badge, Flex, Text} from "@chakra-ui/react"
+import {Badge, Box, Flex, Text} from "@chakra-ui/react"
+import { FaCheckCircle } from "react-icons/fa"
+import { MdDelete } from "react-icons/md"
 
 type TodoItem =  {
   id: string,
@@ -29,10 +31,23 @@ const TodoItem = ({todo}: props) => {
           {todo.body}
         </Text>
         {todo.completed && (
-          <Badge>
+          <Badge ml={1} colorScheme="green">
             Done
           </Badge>
         )}
+        {!todo.completed && (
+          <Badge ml={1} colorScheme="yellow">
+            In Progress
+          </Badge>
+        )}
+      </Flex>
+      <Flex gap={2} alignItems={"center"}>
+        <Box cursor={"pointer"}>
+          <FaCheckCircle size={20} />
+        </Box>
+        <Box cursor={"pointer"}>
+          <MdDelete size={25} />
+        </Box>
       </Flex>
     </Flex>
   )
