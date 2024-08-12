@@ -1,0 +1,13 @@
+# Go + React + TS TODO APP
+
+## FRONT
+- REACT VITE
+- TS
+- CHAKRA UI
+- TANSTACK QUERY
+
+
+## BACKEND
+- GOLANG
+- FIBER
+- AIR
