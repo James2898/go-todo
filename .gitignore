@@ -12,3 +12,5 @@ vendor/
 *.out
 
 /tmp/
+/tmp/**
+main
